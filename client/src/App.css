@@ -4,4 +4,6 @@
   min-height: 100vh;
   display: flex;
   background-image: url("https://static.vecteezy.com/system/resources/previews/001/984/861/original/abstract-blue-geometric-circles-overlapping-background-with-light-blue-free-vector.jpg");
+  background-size: cover;
+  background-position: center;
 }
