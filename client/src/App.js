@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Button } from '@chakra-ui/react';
+import {Route} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <>Hello Vk, How r u</>
-    </div>
+      <> 
+      <Route path ="/" component={}/>
+      <Button colorScheme='blue'>Button</Button>
+      </>
+  
   );
 }
 
