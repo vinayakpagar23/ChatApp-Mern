@@ -22,4 +22,4 @@ app.get("/api/chats/:id",(req,resp)=>{
 })
 
 const PORT = process.env.PORT || 5000;
-app.listen(5000,console.log("server started"));
+app.listen(5000,console.log(`server started ${PORT}`));
