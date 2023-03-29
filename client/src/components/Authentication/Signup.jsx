@@ -8,12 +8,15 @@ const Signup = () => {
   const[password,setPassword] =useState();
   const[confirmpassword,setConfirmpassword] =useState();
   const[pic,setPic]=useState();
+  const[loading,setLoading] =useState(false);
 
   const handleClick=()=>{
     setShow(!show);
   }
 
-  const postDetails =(pics)=>{}
+  const postDetails =(pics)=>{
+
+  }
   const submitHandler=()=>{}
   return (
     <VStack spacing={"5px"} color="black">
