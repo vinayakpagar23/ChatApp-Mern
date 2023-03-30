@@ -1,7 +1,7 @@
 const express = require("express");
 const {protect} =require( "../middleware/authMiddleware");
-const {accessChat, fetchChats, createGroupChat} = require("../controllers/chatController");
-const { renameGroup } = require("../controllers/userController");
+const {accessChat, fetchChats, createGroupChat,renameGroup} = require("../controllers/chatController");
+
 const router = express.Router();
 
 router.route("/").post(protect,accessChat);
