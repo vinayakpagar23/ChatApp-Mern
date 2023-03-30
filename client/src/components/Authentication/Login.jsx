@@ -21,13 +21,12 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 
   const history = useHistory();
-  
 
   const handleClick = () => {
     setShow(!show);
   };
 
-  const submitHandler =async () => {
+  const submitHandler = async () => {
     setLoading(true);
     if (!email || !password) {
       toast({
@@ -79,7 +78,6 @@ const Login = () => {
     }
   };
 
-
   return (
     <VStack spacing={"5px"} color="black">
       <FormControl id="email" isRequired>
@@ -115,11 +113,11 @@ const Login = () => {
         Login
       </Button>
       <Button
-      variant={"solid"}
+        variant={"solid"}
         colorScheme="red"
         width="100%"
         style={{ marginTop: 15 }}
-        onClick={()=>{
+        onClick={() => {
           setEmail("guest@example.com");
           setPassword("123456");
         }}
