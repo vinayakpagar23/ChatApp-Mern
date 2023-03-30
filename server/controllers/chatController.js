@@ -52,6 +52,8 @@ const accessChat = asyncHandler(async (req, res) => {
 //@description     Fetch all chats for a user
 //@route           GET /api/chat/
 //@access          Protected
+
+
 const fetchChats = asyncHandler(async (req, res) => {
     try {
       Chat.find({ users: { $elemMatch: { $eq: req.user._id } } })
