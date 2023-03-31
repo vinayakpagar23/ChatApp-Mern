@@ -14,17 +14,13 @@ import { useHistory } from "react-router-dom";
 
 const Login = () => {
   const [show, setShow] = useState(false);
-
+  const handleClick = () => setShow(!show);
   const toast = useToast();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
 
   const history = useHistory();
-
-  const handleClick = () => {
-    setShow(!show);
-  };
 
   const submitHandler = async () => {
     setLoading(true);
@@ -79,23 +75,24 @@ const Login = () => {
   };
 
   return (
-    <VStack spacing={"5px"} color="black">
+    <VStack spacing="10px">
       <FormControl id="email" isRequired>
-        <FormLabel>Email</FormLabel>
+        <FormLabel>Email Address</FormLabel>
         <Input
-          placeholder="Enter Your Email"
           value={email}
+          type="email"
+          placeholder="Enter Your Email Address"
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
       <FormControl id="password" isRequired>
         <FormLabel>Password</FormLabel>
-        <InputGroup>
+        <InputGroup size="md">
           <Input
-            type={show ? "text" : "password"}
             value={password}
-            placeholder="Enter Your Password"
             onChange={(e) => setPassword(e.target.value)}
+            type={show ? "text" : "password"}
+            placeholder="Enter password"
           />
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -104,7 +101,6 @@ const Login = () => {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-
       <Button
         colorScheme="blue"
         width="100%"
@@ -115,16 +111,15 @@ const Login = () => {
         Login
       </Button>
       <Button
-        variant={"solid"}
+        variant="solid"
         colorScheme="red"
         width="100%"
-        style={{ marginTop: 15 }}
         onClick={() => {
           setEmail("guest@example.com");
           setPassword("123456");
         }}
       >
-        Get Guest User Credential
+        Get Guest User Credentials
       </Button>
     </VStack>
   );
