@@ -125,25 +125,25 @@ function SideDrawer() {
   return (
     <>
       <Box
-      
+         bgImage={"linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% )"}
          display={"flex"}
         justifyContent="space-between"
         alignItems="center"
-        bg="white"
+        // bg="white"
         w="100%"
         p="5px 10px 5px 10px"
         borderWidth="5px"
       >
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
+          <Button  onClick={onOpen}>
             <i className="fas fa-search"></i>
             <Text d={{ base: "none", md: "flex" }} px={4}>
               Search User
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+        <Text fontSize="2xl" fontFamily="Work sans" fontWeight={"bolder"}>
+          VK-CHAT-APP
         </Text>
         <div>
           <Menu>
