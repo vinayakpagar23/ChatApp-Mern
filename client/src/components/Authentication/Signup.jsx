@@ -121,7 +121,7 @@ const Signup = () => {
       history.push("/chats");
     } catch (err) {
       toast({
-        title: "error occurs during registration",
+        title: "error occurs during registration,user already registered",
         description: err.response.data.message,
         status: "warning",
         duration: 5000,

@@ -60,7 +60,12 @@ const Login = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
+      // setTimeout(()=>{
+      //   history.push("/chats");
+      // },3000)
+  
       history.push("/chats");
+      window.location.reload(false);
     } catch (error) {
       toast({
         title: "Error Occured!",

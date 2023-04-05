@@ -8,10 +8,10 @@ const chatRoutes = require("./routes/chatRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 dotenv.config();
-
+const app = express();
 connectDB();
 app.use(cors());
-const app = express();
+
 app.use(express.json()); // to accept json data
 app.get("/", (req, resp) => {
   resp.send("Api is Running");
