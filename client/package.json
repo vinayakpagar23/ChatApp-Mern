@@ -1,8 +1,8 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
   "proxy": "http://127.0.0.1:4000",
+  "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.18",
     "@chakra-ui/react": "^2.5.1",
