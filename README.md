@@ -12,7 +12,7 @@ chat application that enables real-time messaging. With this chat application, u
   
 ## Demo
 
-**Deploy Link:** : chatapp-mern1.netlify.app/
+**Deploy Link:** : https://chatapp-mern1.netlify.app/
 **Server Link:** : https://chatappp-backed.onrender.com"
 
 ![](https://github.com/vinayakpagar23/ChatApp-Mern/blob/main/screenshots/profile1.png)
