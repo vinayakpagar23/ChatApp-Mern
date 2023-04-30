@@ -1,5 +1,5 @@
 # ChatApp-Mern
-chat application that enables real-time messaging. With this chat application, users have the ability to engage in one-to-one conversations or participate in group chats. This means that messages can be sent and received instantly, making it convenient for users to communicate with one another.
+chat application that enable real-time messaging. With this chat application, users have the ability to engage in one-to-one conversations or participate in group chats. This means that messages can be sent and received instantly, making it convenient for users to communicate with one another.
 # Talk-A-Tive
 
 ## Tech Stack
